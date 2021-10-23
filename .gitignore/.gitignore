@@ -1,0 +1,18 @@
+//Primero entrar como superusuario para poder realizar la actividad.
+
+//Crearemos primeramente el grupo para ellos usaremos el comando (groupadd + nombre_grupo) 
+
+groupadd family
+
+//Crearemos los usuarios con el comando (useradd + nombre_usuario)
+
+useradd nelson
+useradd jimmy
+
+//Luego agregaremos los usuarios a los grupos con el comando (adduser + usuario)
+
+adduser nelson family
+adduser jimmy family
+
+//Cambiar nombre al grupo con el comando (groupmod -n + nuevo_nombre + Nombre_anterior)
+groupmod -n casa family
